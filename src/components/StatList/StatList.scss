@@ -1,0 +1,31 @@
+@import 'src/assets/scss/variables.scss';
+
+.categories-block {
+  display: flex;
+  gap: 32px;
+
+  &__col {
+    flex: 1 1 355px;
+  }
+}
+
+.category {
+  &__title {
+    display: inline-block;
+    padding-bottom: 12px;
+    line-height: 1em;
+    text-transform: uppercase;
+    border-bottom: 4px solid $accent;
+  }
+}
+
+.subcategory {
+  padding-block: 12px;
+  display: flex;
+
+  &__amount {
+    margin-right: 12px;
+    font-weight: 700;
+    color: $black;
+  }
+}

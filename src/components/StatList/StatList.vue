@@ -33,12 +33,12 @@ export default {
 </script>
 
 <template>
-  <div v-for="category in categories" class="categories-block">
-    <article class="category">
+  <div class="categories-block">
+    <article class="categories-block__col category" v-for="category in categories">
       <h2 class="category__title">{{ category.name }}</h2>
       <ul v-for="subcategory in category.subcategories" class="category__subcategories">
         <li class="subcategory">
-          <span class="accent">{{ subcategory.amount }}</span> {{ subcategory.name }}
+          <span class="subcategory__amount">{{ subcategory.amount }}</span> {{ subcategory.name }}
         </li>
       </ul>
     </article>
