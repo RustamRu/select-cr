@@ -2,10 +2,19 @@
 // TYPOGRAPHY
 $base-font: 'Geometria', sans-serif;
 $base-line-height: 1.25;
-$base-font-size: 18px;
+$base-font-sizes: (
+  "screen": 18px,
+  "phone": 16px
+);
 $heading-line-height: 1.25;
-$h1-font-size: 48px;
-$h2-font-size: 20px;
+$h1-font-sizes: (
+  "screen": 48px,
+  "phone": 28px
+);
+$h2-font-sizes: (
+  "screen": 20px,
+  "phone": 18px
+);
 
 // COLOR
 /* declarative */
@@ -29,4 +38,7 @@ $icon-buttons: // state: color
   "hover" lighten($icon-button-color, 5%),
   "focus" lighten($icon-button-color, 5%),
   "active" lighten($icon-button-color, 2%),
-  "disabled" $disabled;
+  "disabled"$disabled;
+
+// breakpoints
+$breakpoint-phone: 804px;
