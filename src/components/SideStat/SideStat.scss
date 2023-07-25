@@ -4,6 +4,10 @@
   max-width: 546px;
   padding: 10px 18px 20px 34px;
   background-color: $gray-1;
+
+  @media (max-width: $breakpoint-phone) {
+    display: none;
+  }
 }
 
 .table {

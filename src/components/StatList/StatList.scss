@@ -2,6 +2,7 @@
 
 .categories-block {
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
 
   &__col {
@@ -22,6 +23,10 @@
 .subcategory {
   padding-block: 12px;
   display: flex;
+
+  @media (max-width: $breakpoint-phone) {
+    padding-block: 6px;
+  }
 
   &__amount {
     margin-right: 12px;
