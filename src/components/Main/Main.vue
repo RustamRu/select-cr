@@ -12,7 +12,7 @@ export default {
 <template>
   <main class="main">
     <h1 class="main__title">
-      <span class="accent">Центральная россия —</span> 1/3 экономики страны
+      <span class="main__title-accent">Центральная россия —</span> 1/3 экономики страны
     </h1>
     <StatList />
     <DistrictMap class="main__map"/>

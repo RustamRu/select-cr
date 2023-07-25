@@ -1,13 +1,38 @@
+@import 'src/assets/scss/variables.scss';
+
 .main {
   padding: 32px;
 
+  @media (max-width: $breakpoint-phone) {
+    padding: 16px;
+  }
+
   &__title {
     margin-bottom: 32px;
+
+    @media (max-width: $breakpoint-phone) {
+      margin-bottom: 10px;
+      color: $accent;
+    }
+  }
+
+  &__title-accent {
+    color: $accent;
+
+    @media (max-width: $breakpoint-phone) {
+      color: $black;
+    }
   }
 
   &__map {
+    width: clamp(355px, 34%, 406px);
     position: absolute;
     top: 310px;
     right: 32px;
+    z-index: -1;
+
+    @media (max-width: $breakpoint-phone) {
+      position: static;
+    }
   }
 }
