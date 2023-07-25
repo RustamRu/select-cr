@@ -63,6 +63,10 @@ module.exports = {
         test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
+      {
+        test: /\.svg$/,
+        use: ['vue-loader', path.resolve(__dirname, 'src/scripts/svg-to-vue.js')],
+      }
     ],
   },
   plugins: [
