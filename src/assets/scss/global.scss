@@ -1,0 +1,30 @@
+:root {
+  font-family: $base-font;
+  font-size: $base-font-size;
+  font-weight: 400;
+  line-height: $base-line-height;
+  color: $text-color;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1194px;
+  background-color: $white;
+}
+
+h1 {
+  font-size: $h1-font-size;
+  font-weight: 700;
+  line-height: $heading-line-height;
+  color: $black;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: $h2-font-size;
+  color: $black;
+}
+
+.accent {
+  color: $accent;
+}

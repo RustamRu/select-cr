@@ -1,5 +1,4 @@
-// src/styles.scss
-.message {
-  text-align: center;
-  font-size: 30px;
-}
+@import "assets/scss/reset.scss";
+@import "assets/scss/fonts";
+@import "assets/scss/variables";
+@import "assets/scss/global.scss";

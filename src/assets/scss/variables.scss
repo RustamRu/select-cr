@@ -1,0 +1,32 @@
+@use "sass:math";
+// TYPOGRAPHY
+$base-font: 'Geometria', sans-serif;
+$base-line-height: 1.25;
+$base-font-size: 18px;
+$heading-line-height: 1.25;
+$h1-font-size: 48px;
+$h2-font-size: 20px;
+
+// COLOR
+/* declarative */
+$black: #152831;
+$gray-2: #667185;
+$gray-1: #F3F4F6;
+$white: white;
+$red: #9C1421;
+$shadow: #091E4240;
+/* main semantic */
+$accent: $red;
+$neutral: $gray-2;
+$disabled: $gray-1;
+/* typography */
+$text-color: $neutral;
+$heading-color: $black;
+/* icon buttons */
+$icon-button-background-color: transparent;
+$icon-button-color: $neutral;
+$icon-buttons: // state: color 
+  "hover" lighten($icon-button-color, 5%),
+  "focus" lighten($icon-button-color, 5%),
+  "active" lighten($icon-button-color, 2%),
+  "disabled" $disabled;
