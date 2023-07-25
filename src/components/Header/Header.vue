@@ -14,8 +14,8 @@ export default {
     <a href="#">
       <Logo class="header__logo logo" />
     </a>
-    <button class="header__btn burger-btn">
-      <BurgerIco class="burger-btn__icon" />
+    <button class="header__btn icon-btn">
+      <BurgerIco class="icon-btn__icon" />
     </button>
   </header>
 </template>
