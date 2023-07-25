@@ -15,32 +15,32 @@ export default {
         {
           name: 'Внешняя торговля',
           icon: ThreeArrowsIco,
-          districtGrowth: '+19.0%',
-          totalGrowth: '+17.6%',
+          districtGrowth: '+19.0',
+          totalGrowth: '+17.6',
         },
         {
           name: 'Инвестиции',
           icon: RubleIco,
-          districtGrowth: '+8.9%',
-          totalGrowth: '+4.3%',
+          districtGrowth: '+8.9',
+          totalGrowth: '+4.3',
         },
         {
           name: 'Промышленность',
           icon: GearIco,
-          districtGrowth: '+7.5%',
-          totalGrowth: '+2.9%',
+          districtGrowth: '+7.5',
+          totalGrowth: '+2.9',
         },
         {
           name: 'Розничная торговля',
           icon: CartIco,
-          districtGrowth: '+4.0%',
-          totalGrowth: '+2.6%',
+          districtGrowth: '+4.0',
+          totalGrowth: '+2.6',
         },
         {
           name: 'Сельское хозяйство',
           icon: RyeIco,
-          districtGrowth: '+3.1%',
-          totalGrowth: '-0.6%',
+          districtGrowth: '+3.1',
+          totalGrowth: '-0.6',
         },
       ]
     }
@@ -53,7 +53,7 @@ export default {
     <table class="table">
       <thead>
         <tr>
-          <th class="col-heading col-heading--main">Рост за 2019 год</th>
+          <th class="col-heading col-heading--main accent">Рост за 2019 год</th>
           <th class="col-heading accent">Центральная Россия</th>
           <th class="col-heading">Российская Федерация</th>
         </tr>
@@ -61,10 +61,10 @@ export default {
       <tbody>
         <tr v-for="sector in sectors" class="sector-entry">
           <td class="sector-entry__name">
-            <component :is="sector.icon" class="sector-entry__icon"/> {{ sector.name }}
+            <span class="sector-entry__icon"><component :is="sector.icon"/></span> {{ sector.name }}
           </td>
-          <td class="sector-entry__grouth-amount accent">{{ sector.districtGrowth }}</td>
-          <td class="sector-entry__grouth-amount">{{ sector.totalGrowth }}</td>
+          <td class="sector-entry__grouth-amount accent">{{ sector.districtGrowth }} %</td>
+          <td class="sector-entry__grouth-amount">{{ sector.totalGrowth }} %</td>
         </tr>
       </tbody>
     </table>
