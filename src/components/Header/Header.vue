@@ -11,7 +11,9 @@ export default {
 
 <template>
   <header class="header">
-    <Logo />
+    <a href="#">
+      <Logo class="header__logo logo" />
+    </a>
     <button class="header__btn burger-btn">
       <BurgerIco class="burger-btn__icon" />
     </button>
